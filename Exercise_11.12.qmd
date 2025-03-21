@@ -1,7 +1,7 @@
 ---
 title: "Exercise_11.12"
 author: "Aldair Perez"
-date: 03-20-2025
+date: 03-21-2025
 format: html
 execute: 
   echo: true
@@ -16,7 +16,6 @@ library(dplyr)
 library(flextable)
 library(zoo)
 library(broom)
-install.packages("ggpubr", repos = "https://cloud.r-project.org/")
 library(ggpubr)
 library(ggplot2)
 ```
@@ -87,7 +86,6 @@ table(airquality$Season)
 # Part 3
 8.) 
 ```{r}
-install.packages("recipes", repos = "https://cloud.r-project.org/")
 library(recipes)
 recipe_data <- recipe(Ozone ~ Temp + Solar.R + Wind + Season, data = airquality) %>%
   step_normalize(Temp, Solar.R, Wind) %>%
