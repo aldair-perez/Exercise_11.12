@@ -1,5 +1,0 @@
-project:
- type: website
-format:
- html:
-  self-contained: true
